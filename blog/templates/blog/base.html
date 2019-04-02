@@ -1,0 +1,17 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>My blog</title>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">My Blog</a></h1>
+        </div>
+
+        <div>
+          {% block content %}
+          {% endblock %}
+        </div>
+    </body>
+</html>
